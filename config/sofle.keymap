@@ -54,7 +54,7 @@
 &kp ESC  &kp NB_N1  &kp NB_N2            &kp NB_N3    &kp NB_N4    &kp NB_N5                            &kp NB_N6     &kp NB_N7     &kp NB_N8     &kp NB_N9    &kp NB_N0            &kp BSPC
 &kp TAB    &kp NB_Q   &kp NB_W             &kp NB_E     &kp NB_R     &kp NB_T                             &kp NB_Y      &kp NB_U      &kp NB_I      &kp NB_O     &kp NB_P             &kp NB_A_RING
 &kp LSHFT    &kp NB_A   &kp NB_S             &kp NB_D     &kp NB_F     &kp NB_G                             &kp NB_H      &kp NB_J      &kp NB_K      &kp NB_L     &kp NB_O_SLASH    &kp NB_AE
-&kp LSHFT  &kp NB_Z   &kp NB_X             &kp NB_C     &kp NB_V     &kp NB_B      &kp C_MUTE    &none    &kp NB_N      &kp NB_M      &kp NB_COMMA  &kp NB_DOT   &kp NB_TILDE2         &kp RSHFT
+&kp LSHFT  &kp NB_Z   &kp NB_X             &kp NB_C     &kp NB_V     &kp NB_B      &kp C_MUTE    &none    &kp NB_N      &kp NB_M      &kp NB_COMMA  &kp NB_DOT   &kp NB_TILDE         &kp RSHFT
                    &kp LEFT_CONTROL  &kp LALT  &kp LGUI  &mo LOWER  &kp RET     &kp SPACE  &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
