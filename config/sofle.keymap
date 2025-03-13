@@ -5,7 +5,7 @@
  */
 
 
-#include <locale/keys_nb.h>
+#include "keys_nb.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
