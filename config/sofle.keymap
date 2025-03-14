@@ -75,7 +75,7 @@
             bindings = <
 &trans     &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
 &kp GRAVE  &kp NB_N1     &kp NB_N2     &kp NB_N3    &kp NB_N4    &kp NB_N5                       &kp NB_N6     &kp NB_N7    &kp NB_N8     &kp NB_N9     &kp NB_N0    &kp F12
-&trans     &kp NB_EXCL   &kp NB_AT     &kp NB_HASH  &kp NB_DLLR  &kp NB_PRCNT                    &kp NB_CARET  &kp NB_AMPS  &kp NB_ASTRK  &kp NB_LPAR   &kp NB_RPAR  &kp NB_PIPE
+&trans     &kp NB_EXCL   &kp NB_AT     &kp NB_HASH  &kp NB_DLLR  &kp NB_PRCNT                    &kp NB_MODIFIER_CIRCUMFLEX  &kp NB_AMPS  &kp NB_ASTRK  &kp NB_LPAR   &kp NB_RPAR  &kp NB_PIPE
 &trans     &kp NB_EQUAL  &kp NB_MINUS  &kp NB_PLUS  &kp NB_LBRC  &kp NB_RBRC   &trans    &trans  &kp NB_LBKT   &kp NB_RBKT  &kp NB_SEMI   &kp NB_COLON  &kp NB_BSLH  &trans
                       &trans     &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
             >;
