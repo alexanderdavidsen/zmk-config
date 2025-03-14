@@ -44,18 +44,18 @@
             display-name = "default";
 
             // ------------------------------------------------------------------------------------------------------------
-            // |  ESC   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   | BKSPC |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |  Å    |
-            // |  SHIFT  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   Ø   |   Æ   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   -   | SHIFT |
-            //               | CTRL | ALT  | GUI | LOWER|   | ENTER | SPACE | RAISE| CTRL  | ALT   | GUI  |
+            // |  ESC  |  1  |  2  |  3  |  4  |  5  |                   |  6  |  7  |  8  |  9  |  0   | BKSPC |
+            // |  TAB  |  Q  |  W  |  E  |  R  |  T  |                   |  Y  |  U  |  I  |  O  |  P   |   Å   |
+            // | SHIFT |  A  |  S  |  D  |  F  |  G  |                   |  H  |  J  |  K  |  L  |  Ø   |   Æ   |
+            // | SHIFT |  Z  |  X  |  C  |  V  |  B  |  MUTE  |  |      |  N  |  M  |  ,  |  .  |  -   | SHIFT |
+            //               | CTRL| ALT | GUI |LOWER| ENTER |  | SPACE |RAISE| CTRL| ALT | GUI |
 
             bindings = <
-&kp ESC  &kp NB_N1  &kp NB_N2            &kp NB_N3    &kp NB_N4    &kp NB_N5                            &kp NB_N6     &kp NB_N7     &kp NB_N8     &kp NB_N9    &kp NB_N0            &kp BSPC
-&kp TAB    &kp NB_Q   &kp NB_W             &kp NB_E     &kp NB_R     &kp NB_T                             &kp NB_Y      &kp NB_U      &kp NB_I      &kp NB_O     &kp NB_P             &kp NB_A_RING
-&kp LSHFT    &kp NB_A   &kp NB_S             &kp NB_D     &kp NB_F     &kp NB_G                             &kp NB_H      &kp NB_J      &kp NB_K      &kp NB_L     &kp NB_O_SLASH    &kp NB_AE
-&kp LSHFT  &kp NB_Z   &kp NB_X             &kp NB_C     &kp NB_V     &kp NB_B      &kp C_MUTE    &none    &kp NB_N      &kp NB_M      &kp NB_COMMA  &kp NB_DOT   &kp NB_MINUS &kp RSHFT
-                   &kp LCTRL  &kp LALT  &kp LGUI  &mo LOWER  &kp RET     &kp SPACE  &mo RAISE  &kp RCTRL  &kp LALT   &kp RGUI
+&kp ESC    &kp NB_N1  &kp NB_N2     &kp NB_N3  &kp NB_N4  &kp NB_N5                          &kp NB_N6  &kp NB_N7  &kp NB_N8    &kp NB_N9   &kp NB_N0     &kp BSPC
+&kp TAB    &kp NB_Q   &kp NB_W      &kp NB_E   &kp NB_R   &kp NB_T                           &kp NB_Y   &kp NB_U   &kp NB_I     &kp NB_O    &kp NB_P      &kp NB_A_RING
+&kp LSHFT  &kp NB_A   &kp NB_S      &kp NB_D   &kp NB_F   &kp NB_G                           &kp NB_H   &kp NB_J   &kp NB_K     &kp NB_L    &kp NB_O_SLASH &kp NB_AE
+&kp LSHFT  &kp NB_Z   &kp NB_X      &kp NB_C   &kp NB_V   &kp NB_B   &kp C_MUTE    &none    &kp NB_N   &kp NB_M   &kp NB_COMMA &kp NB_DOT  &kp NB_MINUS  &kp RSHFT
+                      &kp LCTRL     &kp LALT  &kp LGUI  &mo LOWER  &kp RET      &kp SPACE &mo RAISE  &kp RCTRL &kp LALT    &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -64,20 +64,19 @@
         lower_layer {
             display-name = "lower";
 
-            // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
-            // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
-            // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
-            // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
-            //               |     |      |      |      |        |  |       |      |       |       |      |
+            // |   ~   |  ?  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |  DEL  |
+            // |   `   |  !  |  "  |  £   |  €   |  §   |                   |  [   |  7    |  8    |  9   |   ]   |  F12  |
+            // |       |  <  |  >  |  {   |  }   |  ±   |                   |  =   |  4    |  5    |  6   |   +   |   |   |
+            // |       |  \  |  /  |  (   |  )   |  _   |        |  |       |  0   |  1    |  2    |  3   |   -   |       |
+            //               |     |      |      |      |        |  |        |      |       |       |      |
 
             bindings = <
-&trans     &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6     &kp F7    &kp F8     &kp F9     &kp F10   &kp F11
-&kp GRAVE  &kp NB_N1     &kp NB_N2     &kp NB_N3    &kp NB_N4    &kp NB_N5                       &kp NB_N6     &kp NB_N7    &kp NB_N8     &kp NB_N9     &kp NB_N0    &kp F12
-&trans     &kp NB_EXCL   &kp NB_AT     &kp NB_HASH  &kp NB_DLLR  &kp NB_PRCNT                    &kp NB_MODIFIER_CIRCUMFLEX  &kp NB_AMPS  &kp NB_ASTRK  &kp NB_LPAR   &kp NB_RPAR  &kp NB_PIPE
-&trans     &kp NB_EQUAL  &kp NB_MINUS  &kp NB_PLUS  &kp NB_LBRC  &kp NB_RBRC   &trans    &trans  &kp NB_LBKT   &kp NB_RBKT  &kp NB_SEMI   &kp NB_COLON  &kp NB_BSLH  &trans
-                      &trans     &trans    &trans    &trans     &trans    &trans  &trans     &trans    &trans     &trans
+&kp TILDE  &kp QMARK  &kp NB_AT  &kp NB_HASH  &kp NB_DLLR  &kp NB_PRCNT                         &kp NB_MODIFIER_CIRCUMFLEX  &kp NB_AMPS   &kp NB_ASTRK  &kp NB_LPAR  &kp NB_RPAR  &kp DEL
+&kp GRAVE  &kp EXCL   &kp DQT    &kp LS(N3)   &none        &none                                 &kp NB_LBKT                 &kp N7        &kp N8        &kp N9       &kp NB_RBKT  &kp F12
+&trans     &kp LT     &kp GT     &kp NB_LBRC  &kp NB_RBRC  &none                                &kp EQUAL                   &kp N4        &kp N5        &kp N6       &kp PLUS     &kp NB_PIPE
+&trans     &kp BSLH   &kp FSLH   &kp LPAR     &kp RPAR     &kp UNDER    &trans         &trans   &kp N0                     &kp N1        &kp N2        &kp N3       &kp MINUS    &trans
+                      &trans      &trans       &trans       &trans       &trans         &trans   &trans                     &trans       &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -87,11 +86,11 @@
             display-name = "raise";
 
             // ------------------------------------------------------------------------------------------------------------
-            // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-            // |       | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |   0   |       |
-            // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-            // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-            //                |      |       |       |      |      |  |      |      |      |       |      |
+            // |  BTCLR |  BT1  |  BT2  |  BT3  |  BT4  |  BT5  |                |      |       |   ^   |      |       |       |
+            // |        |  INS  | PSCR  |  GUI  |       |       |                | PGUP |       |   ^   |      |   0   |       |
+            // |        |  ALT  | CTRL  | SHIFT |       |  CAPS |                | PGDN |   <-  |   v   |  ->  |  DEL  | BKSPC |
+            // |        |  UNDO |  CUT  | COPY  | PASTE |       |       |  |     |      |       |       |      |       |       |
+            //                  |       |       |       |       |       |  |     |      |       |       |      |
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans    &trans   &trans
@@ -105,20 +104,21 @@
         };
 
         adjust_layer {
-            // ----------------------------------------------------------------------------------------------------------------------------
-            // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
-            // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
-            // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
-            // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
-            //                    |         |         |         |         |         | |      |      |      |       |      |
-
             display-name = "adjust";
+
+            // ------------------------------------------------------------------------------------------------------------
+            // |  BTCLR  |  BT1    |  BT2    |  BT3    |  BT4    |  BT5    |                |      |      |      |      |      |      |
+            // | EXTPWR  | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                |      |      |      |      |      |      |
+            // |         | RGB_BRD | RGB_BRI |         |         |         |                |      |      |      |      |      |      |
+            // |         |         |         |         |         |         | RGB_TOG |  |    |      |      |      |      |      |      |
+            //                     |         |         |         |         |         |  |    |      |      |      |      |
+
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
 &ext_power EP_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
-&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
-&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
-                                    &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+&none              &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                       &none  &none  &none  &none  &none  &none
+&none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none   &none  &none  &none  &none  &none  &none
+                                    &none            &none            &none            &none            &none              &none   &none  &none  &none  &none
             >;
         };
     };
